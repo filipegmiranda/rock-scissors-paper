@@ -3,8 +3,7 @@
 
 ## Bullet  Points
 
-- There are 2 solutions into this project, one is in Java, and the other one in Scala, one is not just a translation of the other. Please consider the Scala one the one for evaluation, if you guys can only choose 1.
-
+- There are 2 solutions into this project, one is in Java, and the other one in Scala, one is not just a translation of the other. 
 - It is an SBT project and its Main class published is client.GameClient(Scala), however you can go the the Java Main class also: MainGameController
 
 - There are some commands for playing the game:
@@ -18,8 +17,6 @@ The solution differs between the Java Solution and Scala solution specially beca
 
 Specially in the Java one, the way to provide new Rules, and new Weapons to the game, is by implementing the class GameRules, this class also provides along with a Builder for the rule, a Small DSL(Fluent Interfaces) for defining how the game behaves
 
-In scala, there is a similar concept, but in General I tried to use Referential Transparency as much as possible, and some Scala built-in Features, such as Try[T] and Either
+In scala, there is a similar concept, but in General  Referential Transparency is used as much as possible, and some Scala built-in Features, such as Try[T] and Either
 
-Again, in the Scala version, the behaviour is defined in a similar way as in java, by implementing a trait GameRules, however, the behaviour of how the Weapons related to each other after attack is also in the trait, kind of like reminds me a Mediator Pattern
-
-Next Phase would be refatoring the client, I see a potential for decreasing the amount of code needed
+Again, in the Scala version, the behaviour is defined in a similar way as in java, by implementing a trait GameRules, however, the behaviour of how the Weapons related to each other after attack is also in the trait, kind of like reminds me a Mediator Pattern.
